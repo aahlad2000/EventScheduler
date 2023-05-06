@@ -1,7 +1,6 @@
 package repo;
 
 import jakarta.persistence.*;
-
 import java.util.Date;
 
 @Table
