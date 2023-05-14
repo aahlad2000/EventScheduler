@@ -1,17 +1,13 @@
-package repo;
+package com.scheduler.EventScheduler.repo;
 
 import jakarta.persistence.*;
-
 import java.util.Date;
 
 @Table
-public class EventHistory {
+public class Event {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
-    private Long recordId;
-
     @Column
     private Long eventId;
 
@@ -26,10 +22,4 @@ public class EventHistory {
 
     @Column
     private Date scheduledTime;
-
-    @Column
-    private Date recordedOn;
-
-    @Column
-    private String message;
 }
